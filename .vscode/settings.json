@@ -1,0 +1,15 @@
+{
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.enable": true,
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.format.enable": true,
+  "eslint.packageManager": "yarn",
+  "prettier.quoteProps": "as-needed",
+  "prettier.trailingComma": "all",
+  "prettier.printWidth": 120,
+  "prettier.bracketSpacing": true,
+  "prettier.arrowParens": "always"
+}
