@@ -9,20 +9,17 @@
 
 ## 実行方法
 
-1. React 作成
+1. GitHub リポジトリから Clone
    ```
-   yarn create react-app lesson2
+   git clone https://github.com/arifuku1028/react-lesson2.git ./my-app
    ```
-2. React, React-DOM のバージョンダウン
+2. カレントディレクトリの移動
    ```
-   cd lesson2
-   yarn remove react react-dom
-   yarn add react@17.0.2 react-dom@17.0.2
+   cd my-app
    ```
-3. index.js の変更(React18⇨17)
-4. React 実行
+3. React 実行
    ```
    yarn start
    ```
-5. 実行確認  
+4. 実行確認  
    http://localhost:3000
