@@ -23,4 +23,6 @@
    yarn start
    ```
 4. 実行確認  
-   http://localhost:3000
+   http://localhost:3000  
+   以下が表示されれば OK！
+   ![実行画面](./etc/react.png)
