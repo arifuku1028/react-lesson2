@@ -1,13 +1,15 @@
-import { ShowInputContent } from "./components/ShowInputContent";
-import { AddNumber } from "./components/AddNumber";
-import { Time } from "./components/Time";
+import { GetTime } from "./components/GetTime";
+import { Dropzone } from "./components/Dropzone";
+import { DayPick } from "./components/DayPick";
+import { DragAndDrop } from "./components/DragAndDrop";
 
 export const App = () => {
   return (
     <>
-      <Time />
-      <ShowInputContent />
-      <AddNumber />
+      <GetTime />
+      <DayPick />
+      <Dropzone />
+      <DragAndDrop />
     </>
   );
 };
