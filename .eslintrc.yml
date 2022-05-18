@@ -11,3 +11,9 @@ parserOptions:
   sourceType: module
 plugins:
   - react
+overrides:
+  - files:
+      - "**/*.jsx"
+    rules:
+      react/react-in-jsx-scope: off
+      no-unused-vars: warn
