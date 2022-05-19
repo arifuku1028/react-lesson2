@@ -13,12 +13,6 @@ export const DayPick = () => {
     footer = <p>{format(selectedDay, "PP")} が選択されています</p>;
   }
 
-  const containerStyle = css`
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  `;
-
   return (
     <div css={containerStyle}>
       <DayPicker
@@ -30,3 +24,9 @@ export const DayPick = () => {
     </div>
   );
 };
+
+const containerStyle = css`
+  display: flex;
+  justify-content: center;
+  text-align: center;
+`;
