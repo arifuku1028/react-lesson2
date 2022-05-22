@@ -1,6 +1,7 @@
+/** @jsxImportSource @emotion/react */
 import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
-import styled from "styled-components";
+import { css } from "@emotion/react";
 
 export const Dropzone = () => {
   const [dndText, setDndText] = useState(
@@ -15,18 +16,18 @@ export const Dropzone = () => {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
   return (
-    <SDiv {...getRootProps()}>
+    <div css={containerStyle} {...getRootProps()}>
       <input {...getInputProps()} />
       {isDragActive ? (
         <p>ここにファイルをドロップしてください...</p>
       ) : (
         <p>{dndText}</p>
       )}
-    </SDiv>
+    </div>
   );
 };
 
-const SDiv = styled.div`
+const containerStyle = css`
   background-color: skyblue;
   border: green dotted 2px;
   border-radius: 5px;

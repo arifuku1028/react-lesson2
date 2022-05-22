@@ -3,18 +3,19 @@ import { useState } from "react";
 import dayjs from "dayjs";
 import { css } from "@emotion/react";
 
-export const GetTime = () => {
+export const CurrentDateTime = () => {
   const timeFormat = "YYYY/MM/DD(ddd) HH:mm:ss";
-  const [getTime, setGetTime] = useState(dayjs());
+  const [currentDateTime, setCurrentDateTime] = useState(dayjs());
 
   return (
     <div css={containerStyle}>
       <p css={paragraphStyle}>
-        時刻は <span css={timeTextStyle}>{getTime.format(timeFormat)}</span>{" "}
+        時刻は{" "}
+        <span css={timeTextStyle}>{currentDateTime.format(timeFormat)}</span>{" "}
         です。
       </p>
       <div css={buttonContainerStyle}>
-        <button css={buttonStyle} onClick={() => setGetTime(dayjs())}>
+        <button css={buttonStyle} onClick={() => setCurrentDateTime(dayjs())}>
           時刻を更新
         </button>
       </div>
