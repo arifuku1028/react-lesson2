@@ -9,6 +9,7 @@
   - react-dropzone（ファイルのドラッグアンドドロップ処理）
   - react-beautiful-dnd（ドラッグアンドドロップで DOM 位置を変更）
   - @emotion/react（CSS ライブラリ）
+  - styled-components(CSS ライブラリ)
 - 開発用ライブラリ
   - ESLint（コード検証）
   - Prettier（コード整形）

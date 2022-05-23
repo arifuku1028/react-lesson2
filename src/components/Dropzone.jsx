@@ -15,18 +15,8 @@ export const Dropzone = () => {
   }, []);
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
-  const containerStyle = css`
-    background-color: skyblue;
-    border: green dotted 2px;
-    border-radius: 5px;
-    padding: 5px 20px;
-    margin: 20px auto;
-    white-space: pre-wrap;
-    text-align: center;
-  `;
-
   return (
-    <div {...getRootProps()} css={containerStyle}>
+    <div css={containerStyle} {...getRootProps()}>
       <input {...getInputProps()} />
       {isDragActive ? (
         <p>ここにファイルをドロップしてください...</p>
@@ -36,3 +26,13 @@ export const Dropzone = () => {
     </div>
   );
 };
+
+const containerStyle = css`
+  background-color: skyblue;
+  border: green dotted 2px;
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin: 20px auto;
+  white-space: pre-wrap;
+  text-align: center;
+`;

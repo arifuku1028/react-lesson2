@@ -8,25 +8,26 @@ import { css } from "@emotion/react";
 export const DayPick = () => {
   const [selectedDay, setSelectedDay] = useState();
 
-  let footer = <p>日付を選択してください。</p>;
-  if (selectedDay) {
-    footer = <p>{format(selectedDay, "PP")} が選択されています</p>;
-  }
-
-  const containerStyle = css`
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  `;
-
   return (
     <div css={containerStyle}>
       <DayPicker
         mode="single"
         selected={selectedDay}
         onSelect={setSelectedDay}
-        footer={footer}
+        footer={
+          selectedDay ? (
+            <p>{format(selectedDay, "PP")} が選択されています</p>
+          ) : (
+            <p>日付を選択してください。</p>
+          )
+        }
       />
     </div>
   );
 };
+
+const containerStyle = css`
+  display: flex;
+  justify-content: center;
+  text-align: center;
+`;
